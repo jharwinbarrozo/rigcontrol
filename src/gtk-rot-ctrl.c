@@ -1545,7 +1545,7 @@ static void gtk_rot_ctrl_init(GtkRotCtrl * ctrl)
     ctrl->engaged = FALSE;
     ctrl->delay = 1000;
     ctrl->timerid = 0;
-    ctrl->threshold = 5.0;
+    ctrl->threshold = 1.0;
     ctrl->errcnt = 0;
 
     g_mutex_init(&ctrl->client.mutex);
