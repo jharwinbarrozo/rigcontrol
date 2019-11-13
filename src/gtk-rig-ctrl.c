@@ -1399,7 +1399,7 @@ ctrl->smurf = gtk_toggle_button_new_with_label(_("FM/SSB"));
     g_object_set(label, "xalign", 1.0f, "yalign", 0.5f, NULL);
     gtk_grid_attach(GTK_GRID(table), label, 0, 3, 1, 1);
 
-    ctrl->cycle_spin = gtk_spin_button_new_with_range(10, 100, 10);
+    ctrl->cycle_spin = gtk_spin_button_new_with_range(10, 10000, 10);
     gtk_spin_button_set_digits(GTK_SPIN_BUTTON(ctrl->cycle_spin), 0);
     gtk_widget_set_tooltip_text(ctrl->cycle_spin,
                                 _("This parameter controls the delay between "
